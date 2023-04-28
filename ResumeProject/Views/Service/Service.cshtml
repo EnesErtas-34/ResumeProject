@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Service";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+
+
+<body>
+    @Html.Action("PartialServiceBanner")
+  
+
+
+
+    @Html.Action("PartialService", "Default")
+
+
+    @Html.Action("PartialProjects", "Default")
+
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+</body>
+</html>
+

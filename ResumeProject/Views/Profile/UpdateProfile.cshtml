@@ -1,0 +1,40 @@
+﻿@model ResumeProject.Models.TblProfile
+@{
+    ViewBag.Title = "UpdateProfile";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Profil Güncelleme</h2>
+<form method="post">
+    @Html.HiddenFor(x => x.ProfileID)
+    <label>Profil Başlık</label>
+    @Html.TextBoxFor(x => x.ProfileTitle, new { @class = "form-control" })
+    <br />
+    <label>Profil Açıklama</label>
+    @Html.TextBoxFor(x => x.ProfileDescription, new { @class = "form-control" })
+    <br />
+    <label>Ad</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <label>Mail</label>
+    @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+    <br />
+    <label>Telefon</label>
+    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <label>Sosyal Medya 1</label>
+    @Html.TextBoxFor(x => x.SocialMedia1, new { @class = "form-control" })
+    <br />
+    <label>Sosyal Medya 2</label>
+    @Html.TextBoxFor(x => x.SocialMedia2, new { @class = "form-control" })
+    <br />
+    <label>Sosyal Medya 3</label>
+    @Html.TextBoxFor(x => x.SocialMedia3, new { @class = "form-control" })
+    <br />
+    <label>Sosyal Medya 4</label>
+    @Html.TextBoxFor(x => x.SocialMedia4, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Güncellemeyi Kaydet</button>
+</form>
+
+

@@ -1,0 +1,66 @@
+﻿@using ResumeProject.Models
+@model List<TblProfile>
+
+@foreach (var item in Model )
+{
+
+<section class="w3l-about py-5" id="about">
+    <div class="container py-md-5 py-2">
+        <div class="row w3l-row">
+            <div class="col-lg-5 my-image pe-lg-5 mb-lg-0 mb-md-5 mb-4">
+                <img src="~/Content/starter/assets/images/about.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-7 w3l-about-info px-lg-4 align-center">
+                <h6 class="w3l-title-small mb-1">Biyografim</h6>
+                <h3 class="w3l-title-main mb-2">@item.ProfileTitle</h3>
+                <p class="my-4 pe-lg-5">@item.ProfileDescription</p>
+                <div class="my-info mt-4">
+                    <div class="single-info">
+                        <span>Adım:</span>
+                        <p>@item.Name</p>
+                    </div>
+                    <div class="single-info">
+                        <span>Adresim:</span>
+                        <p>@item.Address</p>
+                    </div>
+                    <div class="single-info">
+                        <span>Mail Adrsim:</span>
+                        <p><a href="mailto:example@mail.com">@item.Mail</a></p>
+                    </div>
+                    <div class="single-info">
+                        <span>Telefonum:</span>
+                        <p><a href="tel:+21 234 567 8901">@item.Phone</a></p>
+                    </div>
+                </div>
+
+                <ul class="follow-social mt-lg-5 mt-4">
+                    <li>
+                        <h5 class="me-md-3">Sosyal medya hesaplarım </h5>
+                    </li>
+
+                    <li>
+                        <a href="@item.SocialMedia1"><span class="fab fa-behance"></span></a>
+                    </li>
+
+                    <li>
+                        <a href="@item.SocialMedia2"><span class="fab fa-linkedin-in"></span></a>
+                    </li>
+
+                    <li>
+                        <a href="@item.SocialMedia3">
+                            <span class="fab fa-facebook-f"></span>
+                        </a>
+                    </li>
+
+                    <li><a href="@item.SocialMedia4"><span class="fab fa-twitter"></span></a></li>
+
+                </ul>
+                <div class="w3l-btn">
+                    <a href="contact.html" class="btn btn-style btn-primary mt-lg-5 mt-4 me-md-2">Bana Ulaşın</a>
+                    <a href="#download-cv" class="btn btn-style btn-secondary mt-lg-5 mt-4"> CV'mi indirin'</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+}

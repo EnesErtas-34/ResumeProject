@@ -1,0 +1,33 @@
+﻿@using ResumeProject.Models
+@model List<TblService>
+<section class="about-section py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
+            <h3 class="w3l-title-main">Ben Neler Yapıyorum</h3>
+        </div>
+        <div class="row justify-content-center">
+            @foreach (var item in Model)
+            {
+            <div class="col-lg-4 col-md-6">
+                <div class="about-single">
+                    <div class="about-icon mb-4">
+                        <i class="@item.Serviceicon"></i>
+                    </div>
+                    <div class="about-content">
+                        <h5 class="mb-3"><a href="#url">@item.ServiceTitle</a></h5>
+                        <p>
+                           @item.ServiceDescription
+                        </p>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+
+        <div class="w3l-btn text-center">
+            <a href="" class="btn btn-border mt-lg-5 mt-4 me-2">
+                Daha fazla hizmet... <span class="fas fa-long-arrow-alt-right"></span>
+            </a>
+        </div>
+    </div>
+</section>

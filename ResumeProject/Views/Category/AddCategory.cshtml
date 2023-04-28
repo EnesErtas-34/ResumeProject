@@ -1,0 +1,14 @@
+﻿@model ResumeProject.Models.TblCategory
+@{
+    ViewBag.Title = "AddCategory";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Kategori Ekleme Sayfası</h2>
+<form method="post">
+<label>Kategori Adı</label>
+@Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control" })
+<br />
+<button class="btn btn-primary">Verileri Kaydet</button>
+</form>
+

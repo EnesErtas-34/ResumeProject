@@ -1,0 +1,39 @@
+﻿@model List<ResumeProject.Models.TblReferences>
+<section class="w3l-clients" id="testimonials">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
+                <span class="w3l-title-small">Yorumlar</span>
+                <h3 class="w3l-title-main">Müşterilerim ve Görüşleri</h3>
+            </div>
+            
+            <div id="owl-demo1" class="owl-carousel owl-theme mt-4 py-2 mb-5">
+                @foreach (var item in Model)
+                {
+                <div class="item">
+                    <div class="testimonial-content">
+                        <div class="testimonial">
+                            <blockquote>
+                                <q>
+                                    @item.Comment
+                                </q>
+                            </blockquote>
+                            <div class="testi-des">
+                                <div class="test-img">
+                                    <img src="~/Content/starter/assets/images/team1.jpg" class="img-fluid"
+                                         alt="client-img">
+                                </div>
+                                <div class="peopl align-self">
+                                    <h3>@item.NameSurname</h3>
+                                    <p class="indentity">@item.Job</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

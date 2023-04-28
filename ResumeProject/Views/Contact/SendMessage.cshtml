@@ -1,0 +1,44 @@
+﻿@model ResumeProject.Models.TblContact
+@{
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+
+    @Html.Action("PartialFeature")
+    <!-- //contact banner -->
+    <!-- contact -->
+    <section class="w3l-contacts-12">
+        <div class="contact-top pt-5">
+            <div class="container py-lg-5 py-2">
+                <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
+                    <h3 class="w3l-title-main">Panelden Bana Mesaj Atabilirsiniz</h3>
+                </div>
+                <div class="d-grid cont-main-top">
+                    <!-- contact form -->
+                    <div class="contacts12-main">
+                        <form method="post" class="main-input">
+                            <div class="top-inputs d-grid">
+                                <input type="text" placeholder="Adınız Soyadınız" name="NameSurname" id="w3lName" required="">
+                                <input type="email" name="Mail" placeholder="Email Adresiniz" id="w3lSender" required="">
+                            </div>
+                            @Html.DropDownListFor(x => x.Subject, (List<SelectListItem>)ViewBag.v, new {@class="form-control"})
+                            <textarea placeholder="Mesajınızı Buraya Yazabilirsiniz..." name="Message" id="w3lMessage" required=""></textarea>
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary btn-style">Mesajı Gönder</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- //contact form -->
+                </div>
+            </div>
+            <!-- map -->
+            @Html.Action("PartialMap");
+            <!-- //map -->
+        </div>
+    </section>
+
+
+
+
+
+  

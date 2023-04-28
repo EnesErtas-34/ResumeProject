@@ -1,0 +1,32 @@
+﻿@model List<ResumeProject.Models.TblTechnology>
+<section class="w3l-content-6" id="skills">
+    <div class="content-6-mian py-5">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="content-info-in row">
+                <div class="content-gd col-lg-5 pe-lg-5 my-image">
+                    <img src="~/Content/starter/assets/images/about.jpg" alt="" class="img-fluid" />
+                </div>
+                <div class="content-gd col-lg-7 mt-lg-0 mt-5 align-self ps-lg-5">
+                    <h6 class="w3l-title-small mb-1">Benim Hakkımda</h6>
+                    <h3 class="w3l-title-main mb-lg-4 mb-3">Hakkımda Birkaç Söz</h3>
+                    <p class="my-4 pe-lg-5">2020 yılında yazılım sektörüne giriş yapıp bu sektörde backend kısmında projeler geliştiriyorum</p>
+                    <h5 class="w3l-subtitle mb-md-5 mb-4">Bazı Programlar üzerine teknoloji değerlerim...</h5>
+                    @foreach (var item in Model)
+                    {
+                        <div class="progress-info mt-5">
+                            <h6 class="progress-tittle">@item.TechnologyTitle</h6>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: @item.TechnologyValue%"
+                                     aria-valuenow="@item.TechnologyValue" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

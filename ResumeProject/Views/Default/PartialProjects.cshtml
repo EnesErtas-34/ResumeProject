@@ -1,0 +1,29 @@
+﻿@using ResumeProject.Models
+@model List<TblProject>
+<section class="w3-gallery py-5" id="portfolio">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="title-heading-w3 mx-auto text-center mb-sm-5 mb-4">
+            <h3 class="w3l-title-main mb-2">Başarılı Çalışmalarım </h3>
+        </div>
+        <div class="row portfolio-area clearfix p-0 m-0">
+            @foreach (var item in Model)
+            {
+            <div class="col-lg-4 col-md-6 portfolio-item2 content" data-id="id-1" data-type="cat-item-1">
+                <span class="image-block">
+                    <a class="image-zoom" href="~/Content/starter/assets/images/blog1.jpg" data-gal="prettyPhoto[gallery]">
+                        <div class="content-overlay"></div>
+                        <img src="@item.ProjectImageUrl" class="img-fluid w3layouts agileits" alt="portfolio-img">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">@item.ProjectTitle</h3>
+                            <p class="content-text">@item.ProjectDescription</p>
+                        </div>
+                    </a>
+                </span>
+            </div>
+            }
+
+        </div>
+        <!--end portfolio-area -->
+    </div>
+    <!-- //gallery container -->
+</section>

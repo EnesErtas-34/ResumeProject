@@ -1,0 +1,33 @@
+﻿@using ResumeProject.Models
+@model List<TblContact>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Gelen Mesajlar</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Konu</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Mesajı Aç</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.TblCategory.CategoryName</td> 
+            <td>@item.Date</td>
+            <td><a href="/Contact/DeleteMessage/@item.ContactID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="#" class="btn btn-outline-dark">Mesajı Aç</a></td>
+        </tr>
+
+    }
+
+</table>
+
