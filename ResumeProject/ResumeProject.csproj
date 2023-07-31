@@ -198,9 +198,15 @@
     <Content Include="Content\sidebar-01\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="Content\sidebar-01\css\bootstrap\_media.css" />
     <Content Include="Content\sidebar-01\css\style.css" />
-    <Content Include="Content\sidebar-01\images\6-eksen-robot-kol.jpg" />
+    <Content Include="Content\sidebar-01\images\csharp.jpg" />
+    <Content Include="Content\sidebar-01\images\Fizik.jpg" />
+    <Content Include="Content\sidebar-01\images\kimya.jpg" />
+    <Content Include="Content\sidebar-01\images\asp-net.jpg" />
+    <Content Include="Content\sidebar-01\images\Python.png" />
     <Content Include="Content\sidebar-01\images\logo.jpg" />
     <Content Include="Content\sidebar-01\images\person.png" />
+    <Content Include="Content\sidebar-01\images\resim1.jpg" />
+    <Content Include="Content\sidebar-01\images\yazilim.jpg" />
     <Content Include="Content\sidebar-01\index.html" />
     <Content Include="Content\sidebar-01\js\bootstrap.min.js" />
     <Content Include="Content\sidebar-01\js\jquery.min.js" />
@@ -234,6 +240,7 @@
     <Content Include="Content\starter\assets\images\logo3.png" />
     <Content Include="Content\starter\assets\images\logo4.png" />
     <Content Include="Content\starter\assets\images\logo5.png" />
+    <Content Include="Content\starter\assets\images\ofis.jpg" />
     <Content Include="Content\starter\assets\images\sprite.png" />
     <Content Include="Content\starter\assets\images\team1.jpg" />
     <Content Include="Content\starter\assets\images\team2.jpg" />
