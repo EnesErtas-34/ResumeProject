@@ -234,6 +234,11 @@
     <Content Include="Content\starter\assets\images\btnNext.png" />
     <Content Include="Content\starter\assets\images\btnPrevious.png" />
     <Content Include="Content\starter\assets\images\db.png" />
+    <Content Include="Content\starter\assets\images\Enes %282%29.png" />
+    <Content Include="Content\starter\assets\images\Enes.jpeg" />
+    <Content Include="Content\starter\assets\images\enes.jpg" />
+    <Content Include="Content\starter\assets\images\enes.png" />
+    <Content Include="Content\starter\assets\images\ertas.png" />
     <Content Include="Content\starter\assets\images\fb.png" />
     <Content Include="Content\starter\assets\images\logo1.png" />
     <Content Include="Content\starter\assets\images\logo2.png" />

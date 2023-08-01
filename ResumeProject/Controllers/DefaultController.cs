@@ -9,7 +9,7 @@ namespace ResumeProject.Controllers
 {
     public class DefaultController : Controller
     {
-        DbResumeEntities1 db = new DbResumeEntities1();//buradaki amacım profile tablosu üzerinden veri çekmek
+        DbResumeEntities1 db = new DbResumeEntities1();
         public ActionResult Index()
         {
             return View();

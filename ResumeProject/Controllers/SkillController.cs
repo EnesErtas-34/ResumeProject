@@ -13,21 +13,21 @@ namespace ResumeProject.Controllers
         public ActionResult Index()
         {
             var values = db.TblSkill.ToList();
-            return View(values);//içindeki değerlerin görünmesi için values yazdık içine
+            return View(values);
         }
-        [HttpGet] //sayfa sadece yüklenince
+        [HttpGet] 
         public ActionResult AddSkill()
         {
             return View();
         }
-        [HttpPost]//kaydet kısmı
+        [HttpPost]
         public ActionResult AddSkill(TblSkill p)
         {
             db.TblSkill.Add(p);
-            db.SaveChanges();//veri tabanına kaydet bu sadece
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
-        public ActionResult DeleteSkill(int id)//silme ve güncelleme verilerinde parametre mutlaka id  
+        public ActionResult DeleteSkill(int id)  
         {
            var value= db.TblSkill.Find(id);
             db.TblSkill.Remove(value);

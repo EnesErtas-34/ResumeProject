@@ -42,7 +42,7 @@ namespace ResumeProject.Controllers
             p.Date = DateTime.Parse(DateTime.Now.ToShortDateString());
             db.TblContact.Add(p);
             db.SaveChanges();
-            return RedirectToAction("Index","Default");//Default dedik aynı controllerin içinde admin paneli olan ındexe giderdi.
+            return RedirectToAction("Index","Default");
         }
 
         public PartialViewResult PartialMap()
